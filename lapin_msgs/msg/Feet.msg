@@ -1,0 +1,9 @@
+std_msgs/Header header
+int64 right_front_force
+bool right_front_valid
+int64 right_back_force
+bool right_back_valid
+int64 left_front_force
+bool left_front_valid
+int64 left_back_force
+bool left_back_valid
