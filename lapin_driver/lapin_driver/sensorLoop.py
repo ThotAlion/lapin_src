@@ -5,6 +5,7 @@ from serial import Serial
 from lapin_msgs.msg import Feet
 from geometry_msgs.msg import Vector3Stamped
 
+# petit changement
 
 class Driver(Node):
 
