@@ -39,6 +39,7 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Feet.msg"
+  "msg/CmdBip.msg"
   DEPENDENCIES std_msgs
  )
 

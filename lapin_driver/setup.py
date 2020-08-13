@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lapin_driver = lapin_driver.sensorLoop:main',
+            'sensors = lapin_driver.sensorLoop:main',
+            'servos = lapin_driver.servoLoop:main',
         ],
     },
 )

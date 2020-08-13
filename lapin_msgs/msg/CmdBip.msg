@@ -1,0 +1,12 @@
+std_msgs/Header header
+float64 sagittal_bissecting_angle
+float64 frontal_bissecting_angle
+float64 sway_angle
+bool compliant
+int64 speed
+float64 right_leg_extension_ratio
+float64 right_ankle_angle
+bool right_ankle_compliant
+float64 left_leg_extension_ratio
+float64 left_ankle_angle
+bool left_ankle_compliant

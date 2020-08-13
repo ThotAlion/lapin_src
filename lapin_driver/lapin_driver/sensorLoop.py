@@ -7,10 +7,10 @@ from geometry_msgs.msg import Vector3Stamped
 
 # petit changement
 
-class Driver(Node):
+class DriverSensor(Node):
 
     def __init__(self):
-        super().__init__('lapin_driver')
+        super().__init__('lapin_sensor')
         self.feetPublisher = self.create_publisher(Feet, 'feet', 10)
         self.posePublisher = self.create_publisher(Vector3Stamped, 'pose', 10)
         self.twistPublisher = self.create_publisher(Vector3Stamped, 'twist', 10)
@@ -57,7 +57,7 @@ class Driver(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    sensors = Driver()
+    sensors = DriverSensor()
 
     rclpy.spin(sensors)
 
