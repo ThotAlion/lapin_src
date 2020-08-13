@@ -1,20 +1,39 @@
-import rclpy,json,math
+import rclpy,json,math,time
 from rclpy.node import Node
 import pypot.robot
 
 from lapin_msgs.msg import CmdBip
+from std_msgs.msg import Float64
 
 class DriverServo(Node):
 
     def __init__(self):
         super().__init__('lapin_servo')
         self.cmdSubscription = self.create_subscription(CmdBip, 'cmd_bip',self.listen_callback, 10)
-        timer_period = 0.04  # seconds
+        self.tempPublisher = self.create_publisher(Float64, 'max_temperature', 10)
+        timer_period = 10  # seconds
+        self.tooHot = False
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.R = pypot.robot.from_json('/home/ubuntu/lapin_ws/src/lapin_driver/pypot_config/confLapinMarkII.json')
 
+    def destroy_node(self):
+        
+        for mot in self.R.motors:
+            mot.compliant = True
+        time.sleep(2)
+        super().destroy_node()
+
     def timer_callback(self):
-        pass
+        temp = 0
+        for mot in self.R.motors:
+            temp = max(temp, mot.present_temperature)
+        msg = Float64()
+        msg.data = temp
+        self.tempPublisher.publish(msg)
+        if temp >60 and self.tooHot==False:
+            self.tooHot = True
+        elif temp <=50 and self.tooHot==True:
+            self.tooHot = False
 
     def listen_callback(self,msg):
         KP = 10
@@ -23,40 +42,40 @@ class DriverServo(Node):
         (aFl,lFl) = self.direct_kinematics((70-self.R.l_knee_y.present_position)*math.pi/180.0)
         
         self.R.r_hip_x.pid = (KP,KI,0)
-        self.R.r_hip_x.compliant = msg.compliant
+        self.R.r_hip_x.compliant = msg.compliant or self.tooHot
         self.R.r_hip_x.goal_position = msg.frontal_bissecting_angle/2
         self.R.r_hip_x.moving_speed = msg.speed
         
         self.R.l_hip_x.pid = (KP,KI,0)
-        self.R.l_hip_x.compliant = msg.compliant
+        self.R.l_hip_x.compliant = msg.compliant or self.tooHot
         self.R.l_hip_x.goal_position = msg.frontal_bissecting_angle/2
         self.R.l_hip_x.moving_speed = msg.speed
         
-        self.R.r_hip_y.compliant = msg.compliant
+        self.R.r_hip_y.compliant = msg.compliant or self.tooHot
         self.R.r_hip_y.goal_position = -lFr-msg.sagittal_bissecting_angle/2
         self.R.r_hip_y.moving_speed = msg.speed
         
-        self.R.l_hip_y.compliant = msg.compliant
+        self.R.l_hip_y.compliant = msg.compliant or self.tooHot
         self.R.l_hip_y.goal_position = -lFl+msg.sagittal_bissecting_angle/2
         self.R.l_hip_y.moving_speed = msg.speed
         
         self.R.r_knee_y.pid = (KP,KI,0)
-        self.R.r_knee_y.compliant = msg.compliant
+        self.R.r_knee_y.compliant = msg.compliant or self.tooHot
         self.R.r_knee_y.goal_position = interp(msg.right_leg_extension_ratio, -40, 30)
         self.R.r_knee_y.moving_speed = msg.speed
         
         self.R.l_knee_y.pid = (KP,KI,0)
-        self.R.l_knee_y.compliant = msg.compliant
+        self.R.l_knee_y.compliant = msg.compliant or self.tooHot
         self.R.l_knee_y.goal_position = interp(msg.left_leg_extension_ratio, -40, 30)
         self.R.l_knee_y.moving_speed = msg.speed
         
         self.R.r_ankle_y.pid = (KP,0,0)
-        self.R.r_ankle_y.compliant = msg.compliant or msg.right_ankle_compliant
+        self.R.r_ankle_y.compliant = msg.compliant or msg.right_ankle_compliant or self.tooHot
         self.R.r_ankle_y.goal_position = aFr-lFr-msg.right_ankle_angle
         self.R.r_ankle_y.moving_speed = msg.speed
         
         self.R.l_ankle_y.pid = (KP,0,0)
-        self.R.l_ankle_y.compliant = msg.compliant or msg.left_ankle_compliant
+        self.R.l_ankle_y.compliant = msg.compliant or msg.left_ankle_compliant or self.tooHot
         self.R.l_ankle_y.goal_position = aFl-lFl-msg.left_ankle_angle
         self.R.l_ankle_y.moving_speed = msg.speed
 
