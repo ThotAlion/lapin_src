@@ -111,10 +111,7 @@ def main(args=None):
     servos = DriverServo()
 
     rclpy.spin(servos)
-
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
+    
     servos.destroy_node()
     rclpy.shutdown()
 
