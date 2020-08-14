@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'sensors = lapin_driver.sensorLoop:main',
             'servos = lapin_driver.servoLoop:main',
+            'zmq = lapin_driver.zmqLoop:main',
         ],
     },
 )
