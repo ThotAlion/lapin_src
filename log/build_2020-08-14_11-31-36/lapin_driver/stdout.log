@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating lapin_driver.egg-info
+writing lapin_driver.egg-info/PKG-INFO
+writing dependency_links to lapin_driver.egg-info/dependency_links.txt
+writing entry points to lapin_driver.egg-info/entry_points.txt
+writing requirements to lapin_driver.egg-info/requires.txt
+writing top-level names to lapin_driver.egg-info/top_level.txt
+writing manifest file 'lapin_driver.egg-info/SOURCES.txt'
+reading manifest file 'lapin_driver.egg-info/SOURCES.txt'
+writing manifest file 'lapin_driver.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/site.py
+Creating /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin-driver.egg-link (link to .)
+Installing sensors script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver
+Installing servos script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver
+
+Installed /home/ubuntu/lapin_ws/src/build/lapin_driver
+running install_data
+creating /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index
+creating /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index/resource_index
+creating /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index/resource_index/packages
+copying resource/lapin_driver -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver
+copying launch/sensors.launch.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver
+copying launch/servo.launch.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver

@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/lapin_ws/src/build/lapin_msgs -- -j4 -l4
+Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/lapin_ws/src/build/lapin_msgs -- -j4 -l4
+Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/lapin_ws/src/build/lapin_msgs
+Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/lapin_ws/src/build/lapin_msgs

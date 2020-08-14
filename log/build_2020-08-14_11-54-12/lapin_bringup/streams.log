@@ -1,0 +1,16 @@
+[2.164s] Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_bringup': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/build/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_bringup/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_bringup
+[4.166s] running develop
+[5.315s] running egg_info
+[5.318s] writing lapin_bringup.egg-info/PKG-INFO
+[5.319s] writing dependency_links to lapin_bringup.egg-info/dependency_links.txt
+[5.321s] writing entry points to lapin_bringup.egg-info/entry_points.txt
+[5.323s] writing requirements to lapin_bringup.egg-info/requires.txt
+[5.325s] writing top-level names to lapin_bringup.egg-info/top_level.txt
+[5.604s] reading manifest file 'lapin_bringup.egg-info/SOURCES.txt'
+[5.612s] writing manifest file 'lapin_bringup.egg-info/SOURCES.txt'
+[5.627s] running build_ext
+[5.631s] Creating /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin-bringup.egg-link (link to .)
+[5.640s] 
+[5.642s] Installed /home/ubuntu/lapin_ws/src/build/lapin_bringup
+[5.644s] running install_data
+[5.863s] Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/build/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_bringup/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_bringup

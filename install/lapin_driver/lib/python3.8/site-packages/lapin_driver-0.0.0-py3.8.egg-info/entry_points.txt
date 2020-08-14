@@ -1,0 +1,4 @@
+[console_scripts]
+sensors = lapin_driver.sensorLoop:main
+servos = lapin_driver.servoLoop:main
+

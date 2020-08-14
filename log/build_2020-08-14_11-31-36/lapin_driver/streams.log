@@ -1,0 +1,28 @@
+[2.131s] Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_driver': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_driver/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_driver
+[4.116s] running develop
+[5.265s] running egg_info
+[5.267s] creating lapin_driver.egg-info
+[5.271s] writing lapin_driver.egg-info/PKG-INFO
+[5.273s] writing dependency_links to lapin_driver.egg-info/dependency_links.txt
+[5.275s] writing entry points to lapin_driver.egg-info/entry_points.txt
+[5.276s] writing requirements to lapin_driver.egg-info/requires.txt
+[5.277s] writing top-level names to lapin_driver.egg-info/top_level.txt
+[5.288s] writing manifest file 'lapin_driver.egg-info/SOURCES.txt'
+[5.559s] reading manifest file 'lapin_driver.egg-info/SOURCES.txt'
+[5.567s] writing manifest file 'lapin_driver.egg-info/SOURCES.txt'
+[5.582s] running build_ext
+[5.585s] Creating /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/site.py
+[5.604s] Creating /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin-driver.egg-link (link to .)
+[5.612s] Installing sensors script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver
+[5.615s] Installing servos script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver
+[5.618s] 
+[5.619s] Installed /home/ubuntu/lapin_ws/src/build/lapin_driver
+[5.621s] running install_data
+[5.624s] creating /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index
+[5.626s] creating /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index/resource_index
+[5.628s] creating /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index/resource_index/packages
+[5.630s] copying resource/lapin_driver -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/ament_index/resource_index/packages
+[5.633s] copying package.xml -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver
+[5.635s] copying launch/sensors.launch.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver
+[5.638s] copying launch/servo.launch.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver
+[5.857s] Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_driver/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_driver

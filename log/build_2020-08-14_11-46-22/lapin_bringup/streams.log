@@ -1,0 +1,30 @@
+[2.446s] Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_bringup': PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --uninstall --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_bringup/build
+[4.648s] running develop
+[6.071s] Removing /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin-bringup.egg-link (link to .)
+[6.290s] Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_bringup' returned '0': PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --uninstall --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_bringup/build
+[6.298s] Invoking command in '/home/ubuntu/lapin_ws/src/lapin_bringup': PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/ubuntu/lapin_ws/src/build/lapin_bringup build --build-base /home/ubuntu/lapin_ws/src/build/lapin_bringup/build install --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --record /home/ubuntu/lapin_ws/src/build/lapin_bringup/install.log --single-version-externally-managed
+[8.437s] running egg_info
+[8.444s] writing /home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/PKG-INFO
+[8.449s] writing dependency_links to /home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/dependency_links.txt
+[8.453s] writing entry points to /home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/entry_points.txt
+[8.455s] writing requirements to /home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/requires.txt
+[8.458s] writing top-level names to /home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/top_level.txt
+[8.785s] reading manifest file '/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/SOURCES.txt'
+[8.796s] writing manifest file '/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/SOURCES.txt'
+[8.808s] running build
+[8.811s] running build_py
+[8.814s] creating /home/ubuntu/lapin_ws/src/build/lapin_bringup/build
+[8.817s] creating /home/ubuntu/lapin_ws/src/build/lapin_bringup/build/lib
+[8.818s] creating /home/ubuntu/lapin_ws/src/build/lapin_bringup/build/lib/lapin_bringup
+[8.824s] copying lapin_bringup/__init__.py -> /home/ubuntu/lapin_ws/src/build/lapin_bringup/build/lib/lapin_bringup
+[8.827s] running install
+[8.830s] running install_lib
+[8.832s] creating /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin_bringup
+[8.837s] copying /home/ubuntu/lapin_ws/src/build/lapin_bringup/build/lib/lapin_bringup/__init__.py -> /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin_bringup
+[8.839s] byte-compiling /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin_bringup/__init__.py to __init__.cpython-38.pyc
+[8.848s] running install_data
+[8.853s] running install_egg_info
+[8.871s] Copying /home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info to /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin_bringup-0.0.0-py3.8.egg-info
+[8.886s] running install_scripts
+[9.079s] writing list of installed files to '/home/ubuntu/lapin_ws/src/build/lapin_bringup/install.log'
+[9.315s] Invoked command in '/home/ubuntu/lapin_ws/src/lapin_bringup' returned '0': PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/ubuntu/lapin_ws/src/build/lapin_bringup build --build-base /home/ubuntu/lapin_ws/src/build/lapin_bringup/build install --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --record /home/ubuntu/lapin_ws/src/build/lapin_bringup/install.log --single-version-externally-managed

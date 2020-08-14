@@ -1,0 +1,14 @@
+source;share/lapin_msgs/hook/cmake_prefix_path.ps1
+source;share/lapin_msgs/hook/cmake_prefix_path.dsv
+source;share/lapin_msgs/hook/cmake_prefix_path.sh
+source;share/lapin_msgs/hook/ld_library_path_lib.ps1
+source;share/lapin_msgs/hook/ld_library_path_lib.dsv
+source;share/lapin_msgs/hook/ld_library_path_lib.sh
+source;share/lapin_msgs/hook/pythonpath.ps1
+source;share/lapin_msgs/hook/pythonpath.dsv
+source;share/lapin_msgs/hook/pythonpath.sh
+source;share/lapin_msgs/local_setup.bash
+source;share/lapin_msgs/local_setup.dsv
+source;share/lapin_msgs/local_setup.ps1
+source;share/lapin_msgs/local_setup.sh
+source;share/lapin_msgs/local_setup.zsh

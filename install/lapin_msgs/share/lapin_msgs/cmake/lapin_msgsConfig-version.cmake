@@ -1,0 +1,1 @@
+/home/ubuntu/lapin_ws/src/build/lapin_msgs/ament_cmake_core/lapin_msgsConfig-version.cmake

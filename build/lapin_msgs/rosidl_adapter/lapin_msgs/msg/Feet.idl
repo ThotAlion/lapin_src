@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lapin_msgs/msg/Feet.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module lapin_msgs {
+  module msg {
+    struct Feet {
+      std_msgs::msg::Header header;
+
+      int64 right_front_force;
+
+      boolean right_front_valid;
+
+      int64 right_back_force;
+
+      boolean right_back_valid;
+
+      int64 left_front_force;
+
+      boolean left_front_valid;
+
+      int64 left_back_force;
+
+      boolean left_back_valid;
+    };
+  };
+};

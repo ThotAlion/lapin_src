@@ -1,0 +1,38 @@
+[2.116s] Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_driver': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --uninstall --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_driver/build
+[4.074s] running develop
+[5.227s] Removing /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin-driver.egg-link (link to .)
+[5.426s] Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --uninstall --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_driver/build
+[5.440s] Invoking command in '/home/ubuntu/lapin_ws/src/lapin_driver': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/ubuntu/lapin_ws/src/build/lapin_driver build --build-base /home/ubuntu/lapin_ws/src/build/lapin_driver/build install --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --record /home/ubuntu/lapin_ws/src/build/lapin_driver/install.log --single-version-externally-managed
+[7.283s] running egg_info
+[7.289s] writing /home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/PKG-INFO
+[7.292s] writing dependency_links to /home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/dependency_links.txt
+[7.294s] writing entry points to /home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/entry_points.txt
+[7.297s] writing requirements to /home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/requires.txt
+[7.299s] writing top-level names to /home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/top_level.txt
+[7.592s] reading manifest file '/home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/SOURCES.txt'
+[7.602s] writing manifest file '/home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info/SOURCES.txt'
+[7.604s] running build
+[7.607s] running build_py
+[7.608s] creating /home/ubuntu/lapin_ws/src/build/lapin_driver/build
+[7.611s] creating /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib
+[7.613s] creating /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver
+[7.615s] copying lapin_driver/servoLoop.py -> /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver
+[7.617s] copying lapin_driver/__init__.py -> /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver
+[7.619s] copying lapin_driver/sensorLoop.py -> /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver
+[7.622s] running install
+[7.623s] running install_lib
+[7.632s] creating /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver
+[7.634s] copying /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver/servoLoop.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver
+[7.636s] copying /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver/__init__.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver
+[7.638s] copying /home/ubuntu/lapin_ws/src/build/lapin_driver/build/lib/lapin_driver/sensorLoop.py -> /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver
+[7.642s] byte-compiling /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver/servoLoop.py to servoLoop.cpython-38.pyc
+[7.661s] byte-compiling /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver/__init__.py to __init__.cpython-38.pyc
+[7.663s] byte-compiling /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver/sensorLoop.py to sensorLoop.cpython-38.pyc
+[7.669s] running install_data
+[7.674s] running install_egg_info
+[7.689s] Copying /home/ubuntu/lapin_ws/src/build/lapin_driver/lapin_driver.egg-info to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin_driver-0.0.0-py3.8.egg-info
+[7.704s] running install_scripts
+[7.860s] Installing sensors script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver
+[7.863s] Installing servos script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver
+[7.866s] writing list of installed files to '/home/ubuntu/lapin_ws/src/build/lapin_driver/install.log'
+[8.074s] Invoked command in '/home/ubuntu/lapin_ws/src/lapin_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/ubuntu/lapin_ws/src/build/lapin_driver build --build-base /home/ubuntu/lapin_ws/src/build/lapin_driver/build install --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --record /home/ubuntu/lapin_ws/src/build/lapin_driver/install.log --single-version-externally-managed

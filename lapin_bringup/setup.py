@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup
 
-package_name = 'lapin_driver'
+package_name = 'lapin_bringup'
 
 setup(
     name=package_name,
@@ -16,15 +16,13 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='tpeyruse',
+    maintainer='ubuntu',
     maintainer_email='thomas.peyruse@gmail.com',
-    description='driver for biped robot',
-    license='MIT',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'sensors = lapin_driver.sensorLoop:main',
-            'servos = lapin_driver.servoLoop:main',
         ],
     },
 )

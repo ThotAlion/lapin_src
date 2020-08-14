@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/PKG-INFO
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/SOURCES.txt
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/dependency_links.txt
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/entry_points.txt
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/requires.txt
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/top_level.txt
+/home/ubuntu/lapin_ws/src/build/lapin_bringup/lapin_bringup.egg-info/zip-safe
+lapin_bringup/__init__.py
+launch/base.launch.py
+resource/lapin_bringup
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

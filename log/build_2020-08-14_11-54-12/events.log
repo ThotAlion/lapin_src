@@ -1,0 +1,429 @@
+[0.000000] (-) TimerEvent: {}
+[0.002764] (lapin_msgs) JobQueued: {'identifier': 'lapin_msgs', 'dependencies': OrderedDict()}
+[0.003368] (lapin_driver) JobQueued: {'identifier': 'lapin_driver', 'dependencies': OrderedDict([('lapin_msgs', '/home/ubuntu/lapin_ws/src/install/lapin_msgs')])}
+[0.004441] (lapin_bringup) JobQueued: {'identifier': 'lapin_bringup', 'dependencies': OrderedDict([('lapin_msgs', '/home/ubuntu/lapin_ws/src/install/lapin_msgs'), ('lapin_driver', '/home/ubuntu/lapin_ws/src/install/lapin_driver')])}
+[0.006867] (lapin_msgs) JobStarted: {'identifier': 'lapin_msgs'}
+[0.098152] (-) TimerEvent: {}
+[0.110528] (lapin_msgs) JobProgress: {'identifier': 'lapin_msgs', 'progress': 'cmake'}
+[0.119661] (lapin_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/lapin_ws/src/lapin_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/lapin_ws/src/install/lapin_msgs'], 'cwd': '/home/ubuntu/lapin_ws/src/build/lapin_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.102 53806 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/lapin_ws/install/lapin_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/lapin_ws'), ('TERM_PROGRAM_VERSION', '1.47.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-baf00230-823d-489f-88aa-7f23927e9677.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('PIPE_LOGGING', 'true'), ('COLCON_PREFIX_PATH', '/home/ubuntu/lapin_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONBREAKPOINT', 'ipdb.set_trace'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8296365e36.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/lapin_ws/install/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VERBOSE_LOGGING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/lapin_ws/src/build/lapin_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.102 53806 10.0.0.103 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/lapin_ws/build/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/install/lapin_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('AMD_ENTRYPOINT', 'vs/server/remoteExtensionHostProcess'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/lapin_ws/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy')]), 'shell': False}
+[0.198536] (-) TimerEvent: {}
+[0.253806] (lapin_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.298789] (-) TimerEvent: {}
+[0.400309] (-) TimerEvent: {}
+[0.502120] (-) TimerEvent: {}
+[0.504860] (lapin_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.2", minimum required is "3") \n'}
+[0.506468] (lapin_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.602355] (-) TimerEvent: {}
+[0.703823] (-) TimerEvent: {}
+[0.805243] (-) TimerEvent: {}
+[0.906677] (-) TimerEvent: {}
+[1.008151] (-) TimerEvent: {}
+[1.109595] (-) TimerEvent: {}
+[1.211011] (-) TimerEvent: {}
+[1.312300] (-) TimerEvent: {}
+[1.413697] (-) TimerEvent: {}
+[1.515062] (-) TimerEvent: {}
+[1.616489] (-) TimerEvent: {}
+[1.717794] (-) TimerEvent: {}
+[1.819189] (-) TimerEvent: {}
+[1.920661] (-) TimerEvent: {}
+[2.022056] (-) TimerEvent: {}
+[2.087369] (lapin_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.122353] (-) TimerEvent: {}
+[2.156615] (lapin_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.222605] (-) TimerEvent: {}
+[2.324201] (-) TimerEvent: {}
+[2.425489] (-) TimerEvent: {}
+[2.526985] (-) TimerEvent: {}
+[2.628988] (-) TimerEvent: {}
+[2.723957] (lapin_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[2.729265] (-) TimerEvent: {}
+[2.746212] (lapin_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.776767] (lapin_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.0.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.829548] (-) TimerEvent: {}
+[2.931024] (-) TimerEvent: {}
+[3.032368] (-) TimerEvent: {}
+[3.133737] (-) TimerEvent: {}
+[3.235133] (-) TimerEvent: {}
+[3.337331] (-) TimerEvent: {}
+[3.439743] (-) TimerEvent: {}
+[3.541085] (-) TimerEvent: {}
+[3.642393] (-) TimerEvent: {}
+[3.743780] (-) TimerEvent: {}
+[3.845285] (-) TimerEvent: {}
+[3.946736] (-) TimerEvent: {}
+[4.011865] (lapin_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.047058] (-) TimerEvent: {}
+[4.148462] (-) TimerEvent: {}
+[4.210690] (lapin_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.3 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[4.248738] (-) TimerEvent: {}
+[4.350149] (-) TimerEvent: {}
+[4.451518] (-) TimerEvent: {}
+[4.553049] (-) TimerEvent: {}
+[4.654643] (-) TimerEvent: {}
+[4.717384] (lapin_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.2") \n'}
+[4.754896] (-) TimerEvent: {}
+[4.856266] (-) TimerEvent: {}
+[4.957620] (-) TimerEvent: {}
+[5.058996] (-) TimerEvent: {}
+[5.160576] (-) TimerEvent: {}
+[5.261902] (-) TimerEvent: {}
+[5.363481] (-) TimerEvent: {}
+[5.464935] (-) TimerEvent: {}
+[5.566293] (-) TimerEvent: {}
+[5.667692] (-) TimerEvent: {}
+[5.681517] (lapin_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.0 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[5.768051] (-) TimerEvent: {}
+[5.869358] (-) TimerEvent: {}
+[5.971549] (-) TimerEvent: {}
+[6.072941] (-) TimerEvent: {}
+[6.174413] (-) TimerEvent: {}
+[6.276327] (-) TimerEvent: {}
+[6.377582] (-) TimerEvent: {}
+[6.478870] (-) TimerEvent: {}
+[6.580136] (-) TimerEvent: {}
+[6.681861] (-) TimerEvent: {}
+[6.784126] (-) TimerEvent: {}
+[6.885607] (-) TimerEvent: {}
+[6.987052] (-) TimerEvent: {}
+[7.088541] (-) TimerEvent: {}
+[7.189965] (-) TimerEvent: {}
+[7.291346] (-) TimerEvent: {}
+[7.363773] (lapin_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.391618] (-) TimerEvent: {}
+[7.493075] (-) TimerEvent: {}
+[7.594494] (-) TimerEvent: {}
+[7.695783] (-) TimerEvent: {}
+[7.797259] (-) TimerEvent: {}
+[7.898629] (-) TimerEvent: {}
+[7.981996] (lapin_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.998952] (-) TimerEvent: {}
+[8.100301] (-) TimerEvent: {}
+[8.201565] (-) TimerEvent: {}
+[8.252621] (lapin_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.2", minimum required is "3.5") \n'}
+[8.256279] (lapin_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[8.301850] (-) TimerEvent: {}
+[8.403544] (-) TimerEvent: {}
+[8.505064] (-) TimerEvent: {}
+[8.510068] (lapin_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.511720] (lapin_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[8.513459] (lapin_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[8.605327] (-) TimerEvent: {}
+[8.706694] (-) TimerEvent: {}
+[8.807946] (-) TimerEvent: {}
+[8.909337] (-) TimerEvent: {}
+[8.916791] (lapin_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.978020] (lapin_msgs) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.987960] (lapin_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.994597] (lapin_msgs) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[9.009580] (-) TimerEvent: {}
+[9.028759] (lapin_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.109859] (-) TimerEvent: {}
+[9.123511] (lapin_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.210165] (-) TimerEvent: {}
+[9.311460] (-) TimerEvent: {}
+[9.412869] (-) TimerEvent: {}
+[9.514249] (-) TimerEvent: {}
+[9.609031] (lapin_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[9.614537] (-) TimerEvent: {}
+[9.652727] (lapin_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/lapin_ws/src/build/lapin_msgs\n'}
+[9.690513] (lapin_msgs) CommandEnded: {'returncode': 0}
+[9.696161] (lapin_msgs) JobProgress: {'identifier': 'lapin_msgs', 'progress': 'build'}
+[9.702782] (lapin_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/lapin_ws/src/build/lapin_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/lapin_ws/src/build/lapin_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.102 53806 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/lapin_ws/install/lapin_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/lapin_ws'), ('TERM_PROGRAM_VERSION', '1.47.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-baf00230-823d-489f-88aa-7f23927e9677.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('PIPE_LOGGING', 'true'), ('COLCON_PREFIX_PATH', '/home/ubuntu/lapin_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONBREAKPOINT', 'ipdb.set_trace'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8296365e36.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/lapin_ws/install/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VERBOSE_LOGGING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/lapin_ws/src/build/lapin_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.102 53806 10.0.0.103 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/lapin_ws/build/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/install/lapin_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('AMD_ENTRYPOINT', 'vs/server/remoteExtensionHostProcess'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/lapin_ws/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy')]), 'shell': False}
+[9.718808] (-) TimerEvent: {}
+[9.821552] (-) TimerEvent: {}
+[9.923111] (-) TimerEvent: {}
+[10.025511] (-) TimerEvent: {}
+[10.130613] (lapin_msgs) StdoutLine: {'line': b'[  2%] Built target lapin_msgs__cpp\n'}
+[10.132997] (-) TimerEvent: {}
+[10.160768] (lapin_msgs) StdoutLine: {'line': b'[ 12%] Built target lapin_msgs__rosidl_generator_c\n'}
+[10.233449] (-) TimerEvent: {}
+[10.335220] (-) TimerEvent: {}
+[10.380360] (lapin_msgs) StdoutLine: {'line': b'[ 23%] Built target lapin_msgs__rosidl_typesupport_introspection_cpp\n'}
+[10.384357] (lapin_msgs) StdoutLine: {'line': b'[ 33%] Built target lapin_msgs__rosidl_typesupport_cpp\n'}
+[10.392614] (lapin_msgs) StdoutLine: {'line': b'[ 43%] Built target lapin_msgs__rosidl_typesupport_c\n'}
+[10.404411] (lapin_msgs) StdoutLine: {'line': b'[ 53%] Built target lapin_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[10.435528] (-) TimerEvent: {}
+[10.537205] (-) TimerEvent: {}
+[10.590992] (lapin_msgs) StdoutLine: {'line': b'[ 64%] Built target lapin_msgs__rosidl_typesupport_introspection_c\n'}
+[10.630270] (lapin_msgs) StdoutLine: {'line': b'[ 74%] Built target lapin_msgs__rosidl_typesupport_fastrtps_c\n'}
+[10.637489] (-) TimerEvent: {}
+[10.739180] (-) TimerEvent: {}
+[10.786830] (lapin_msgs) StdoutLine: {'line': b'[ 74%] Built target lapin_msgs\n'}
+[10.839484] (-) TimerEvent: {}
+[10.941006] (-) TimerEvent: {}
+[10.953149] (lapin_msgs) StdoutLine: {'line': b'[ 76%] Built target lapin_msgs__py\n'}
+[11.041346] (-) TimerEvent: {}
+[11.143064] (-) TimerEvent: {}
+[11.168449] (lapin_msgs) StdoutLine: {'line': b'[ 84%] Built target lapin_msgs__python\n'}
+[11.243371] (-) TimerEvent: {}
+[11.346329] (-) TimerEvent: {}
+[11.390042] (lapin_msgs) StdoutLine: {'line': b'[ 89%] Built target lapin_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[11.412258] (lapin_msgs) StdoutLine: {'line': b'[ 94%] Built target lapin_msgs__rosidl_typesupport_c__pyext\n'}
+[11.413936] (lapin_msgs) StdoutLine: {'line': b'[100%] Built target lapin_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.446614] (-) TimerEvent: {}
+[11.496945] (lapin_msgs) CommandEnded: {'returncode': 0}
+[11.547039] (-) TimerEvent: {}
+[11.648894] (-) TimerEvent: {}
+[11.750000] (-) TimerEvent: {}
+[11.853414] (-) TimerEvent: {}
+[11.954810] (-) TimerEvent: {}
+[12.057767] (-) TimerEvent: {}
+[12.103872] (lapin_msgs) JobProgress: {'identifier': 'lapin_msgs', 'progress': 'install'}
+[12.158254] (-) TimerEvent: {}
+[12.177201] (lapin_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/lapin_ws/src/build/lapin_msgs'], 'cwd': '/home/ubuntu/lapin_ws/src/build/lapin_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.102 53806 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/lapin_ws/install/lapin_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/lapin_ws'), ('TERM_PROGRAM_VERSION', '1.47.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-baf00230-823d-489f-88aa-7f23927e9677.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('PIPE_LOGGING', 'true'), ('COLCON_PREFIX_PATH', '/home/ubuntu/lapin_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONBREAKPOINT', 'ipdb.set_trace'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8296365e36.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/lapin_ws/install/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VERBOSE_LOGGING', 'true'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/lapin_ws/src/build/lapin_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.102 53806 10.0.0.103 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/lapin_ws/build/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/install/lapin_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('AMD_ENTRYPOINT', 'vs/server/remoteExtensionHostProcess'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/lapin_ws/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy')]), 'shell': False}
+[12.251432] (lapin_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.256619] (lapin_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.259643] (-) TimerEvent: {}
+[12.263275] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/ament_index/resource_index/rosidl_interfaces/lapin_msgs\n'}
+[12.268332] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/cmd_bip.h\n'}
+[12.275259] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__functions.h\n'}
+[12.277050] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__struct.h\n'}
+[12.279408] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__type_support.h\n'}
+[12.282014] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__functions.h\n'}
+[12.283693] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__struct.h\n'}
+[12.285544] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__type_support.h\n'}
+[12.287553] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/feet.h\n'}
+[12.290030] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.294153] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/library_path.sh\n'}
+[12.296778] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/library_path.dsv\n'}
+[12.304375] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__rosidl_typesupport_fastrtps_c.h\n'}
+[12.308567] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__rosidl_typesupport_fastrtps_c.h\n'}
+[12.311035] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.313707] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[12.322006] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.325690] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.328031] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.332012] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.338199] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__rosidl_typesupport_introspection_c.h\n'}
+[12.340750] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__rosidl_typesupport_introspection_c.h\n'}
+[12.343210] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.349686] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/cmd_bip.hpp\n'}
+[12.352499] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__builder.hpp\n'}
+[12.354830] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__struct.hpp\n'}
+[12.357370] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__traits.hpp\n'}
+[12.359802] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__builder.hpp\n'}
+[12.361173] (-) TimerEvent: {}
+[12.362888] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__struct.hpp\n'}
+[12.365522] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__traits.hpp\n'}
+[12.367847] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/feet.hpp\n'}
+[12.374373] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/cmd_bip__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.377339] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/include/lapin_msgs/msg/detail/feet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.380600] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/pythonpath.sh\n'}
+[12.384039] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/pythonpath.dsv\n'}
+[12.387061] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/__init__.py\n'}
+[12.392672] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/msg/__init__.py\n'}
+[12.395429] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/msg/_cmd_bip.py\n'}
+[12.397735] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/msg/_feet.py\n'}
+[12.402224] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/lapin_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[12.406701] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/lapin_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[12.411297] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/lapin_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[12.415530] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__python.so\n'}
+[12.418883] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/msg/Feet.idl\n'}
+[12.422268] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/msg/CmdBip.idl\n'}
+[12.425406] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/msg/Feet.msg\n'}
+[12.428338] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/msg/CmdBip.msg\n'}
+[12.432232] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/ament_index/resource_index/package_run_dependencies/lapin_msgs\n'}
+[12.435714] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/ament_index/resource_index/parent_prefix_path/lapin_msgs\n'}
+[12.439085] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/ament_prefix_path.sh\n'}
+[12.442151] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/ament_prefix_path.dsv\n'}
+[12.445332] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/path.sh\n'}
+[12.448427] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/environment/path.dsv\n'}
+[12.451757] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/local_setup.bash\n'}
+[12.454671] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/local_setup.sh\n'}
+[12.457805] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/local_setup.zsh\n'}
+[12.460692] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/local_setup.dsv\n'}
+[12.462078] (-) TimerEvent: {}
+[12.465167] (lapin_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.dsv\n'}
+[12.532892] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/ament_index/resource_index/packages/lapin_msgs\n'}
+[12.535833] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[12.538872] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.542158] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.545776] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.548806] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.551801] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.555800] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.559470] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgsConfig.cmake\n'}
+[12.562052] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgsConfig-version.cmake\n'}
+[12.563478] (-) TimerEvent: {}
+[12.565348] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.xml\n'}
+[12.568447] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_generator_c.so\n'}
+[12.573142] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_typesupport_introspection_c.so\n'}
+[12.577049] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_typesupport_c.so\n'}
+[12.581464] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[12.585830] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/liblapin_msgs__rosidl_typesupport_cpp.so\n'}
+[12.663716] (-) TimerEvent: {}
+[12.765158] (-) TimerEvent: {}
+[12.866431] (-) TimerEvent: {}
+[12.872239] (lapin_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages/lapin_msgs/__init__.py'...\n"}
+[12.921475] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_generator_cExport.cmake\n'}
+[12.923710] (lapin_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.927238] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.929179] (lapin_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.931826] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_cExport.cmake\n'}
+[12.933755] (lapin_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.937442] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_generator_cppExport.cmake\n'}
+[12.939656] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.941394] (lapin_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.944723] (lapin_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[12.946268] (lapin_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/cmake/lapin_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.961770] (lapin_msgs) CommandEnded: {'returncode': 0}
+[12.968818] (-) TimerEvent: {}
+[13.073682] (-) TimerEvent: {}
+[13.139532] (lapin_msgs) JobEnded: {'identifier': 'lapin_msgs', 'rc': 0}
+[13.155068] (lapin_driver) JobStarted: {'identifier': 'lapin_driver'}
+[13.179092] (-) TimerEvent: {}
+[13.288420] (-) TimerEvent: {}
+[13.390093] (-) TimerEvent: {}
+[13.491488] (-) TimerEvent: {}
+[13.593038] (-) TimerEvent: {}
+[13.694400] (-) TimerEvent: {}
+[13.795764] (-) TimerEvent: {}
+[13.897264] (-) TimerEvent: {}
+[13.998579] (-) TimerEvent: {}
+[14.099862] (-) TimerEvent: {}
+[14.201191] (-) TimerEvent: {}
+[14.302493] (-) TimerEvent: {}
+[14.403821] (-) TimerEvent: {}
+[14.505227] (-) TimerEvent: {}
+[14.606632] (-) TimerEvent: {}
+[14.708120] (-) TimerEvent: {}
+[14.809898] (-) TimerEvent: {}
+[14.911455] (-) TimerEvent: {}
+[15.012902] (-) TimerEvent: {}
+[15.114294] (-) TimerEvent: {}
+[15.216904] (-) TimerEvent: {}
+[15.282475] (lapin_driver) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/ubuntu/lapin_ws/src/install/lapin_driver', '--editable', '--build-directory', '/home/ubuntu/lapin_ws/src/build/lapin_driver/build', '--no-deps', 'install_data', '--install-dir', '/home/ubuntu/lapin_ws/src/install/lapin_driver'], 'cwd': '/home/ubuntu/lapin_ws/src/build/lapin_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '10.0.0.102 53806 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:/home/ubuntu/lapin_ws/install/lapin_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/lapin_ws', 'TERM_PROGRAM_VERSION': '1.47.3', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-baf00230-823d-489f-88aa-7f23927e9677.sock', 'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL': 'true', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'PIPE_LOGGING': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/lapin_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PYTHONBREAKPOINT': 'ipdb.set_trace', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8296365e36.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/lapin_ws/src/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_msgs:/opt/ros/foxy', 'SHELL': '/bin/bash', 'VERBOSE_LOGGING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/lapin_ws/src/build/lapin_driver', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.102 53806 10.0.0.103 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/build/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/install/lapin_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'AMD_ENTRYPOINT': 'vs/server/remoteExtensionHostProcess', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/lapin_ws/src/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_msgs'}, 'shell': False}
+[15.316893] (-) TimerEvent: {}
+[15.418692] (-) TimerEvent: {}
+[15.520185] (-) TimerEvent: {}
+[15.621602] (-) TimerEvent: {}
+[15.722991] (-) TimerEvent: {}
+[15.824453] (-) TimerEvent: {}
+[15.925839] (-) TimerEvent: {}
+[16.027098] (-) TimerEvent: {}
+[16.128521] (-) TimerEvent: {}
+[16.229946] (-) TimerEvent: {}
+[16.331375] (-) TimerEvent: {}
+[16.432803] (-) TimerEvent: {}
+[16.534284] (-) TimerEvent: {}
+[16.635684] (-) TimerEvent: {}
+[16.737101] (-) TimerEvent: {}
+[16.838557] (-) TimerEvent: {}
+[16.940056] (-) TimerEvent: {}
+[17.041802] (-) TimerEvent: {}
+[17.143285] (-) TimerEvent: {}
+[17.245691] (-) TimerEvent: {}
+[17.279249] (lapin_driver) StdoutLine: {'line': b'running develop\n'}
+[17.345986] (-) TimerEvent: {}
+[17.447527] (-) TimerEvent: {}
+[17.548986] (-) TimerEvent: {}
+[17.650374] (-) TimerEvent: {}
+[17.751720] (-) TimerEvent: {}
+[17.853097] (-) TimerEvent: {}
+[17.954489] (-) TimerEvent: {}
+[18.055788] (-) TimerEvent: {}
+[18.157085] (-) TimerEvent: {}
+[18.258466] (-) TimerEvent: {}
+[18.359987] (-) TimerEvent: {}
+[18.414737] (lapin_driver) StdoutLine: {'line': b'running egg_info\n'}
+[18.415973] (lapin_driver) StdoutLine: {'line': b'writing lapin_driver.egg-info/PKG-INFO\n'}
+[18.418169] (lapin_driver) StdoutLine: {'line': b'writing dependency_links to lapin_driver.egg-info/dependency_links.txt\n'}
+[18.420150] (lapin_driver) StdoutLine: {'line': b'writing entry points to lapin_driver.egg-info/entry_points.txt\n'}
+[18.423127] (lapin_driver) StdoutLine: {'line': b'writing requirements to lapin_driver.egg-info/requires.txt\n'}
+[18.425684] (lapin_driver) StdoutLine: {'line': b'writing top-level names to lapin_driver.egg-info/top_level.txt\n'}
+[18.460230] (-) TimerEvent: {}
+[18.562162] (-) TimerEvent: {}
+[18.664000] (-) TimerEvent: {}
+[18.704566] (lapin_driver) StdoutLine: {'line': b"reading manifest file 'lapin_driver.egg-info/SOURCES.txt'\n"}
+[18.713584] (lapin_driver) StdoutLine: {'line': b"writing manifest file 'lapin_driver.egg-info/SOURCES.txt'\n"}
+[18.727945] (lapin_driver) StdoutLine: {'line': b'running build_ext\n'}
+[18.731267] (lapin_driver) StdoutLine: {'line': b'Creating /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages/lapin-driver.egg-link (link to .)\n'}
+[18.740162] (lapin_driver) StdoutLine: {'line': b'Installing sensors script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver\n'}
+[18.741976] (lapin_driver) StdoutLine: {'line': b'Installing servos script to /home/ubuntu/lapin_ws/src/install/lapin_driver/lib/lapin_driver\n'}
+[18.744902] (lapin_driver) StdoutLine: {'line': b'\n'}
+[18.746972] (lapin_driver) StdoutLine: {'line': b'Installed /home/ubuntu/lapin_ws/src/build/lapin_driver\n'}
+[18.748348] (lapin_driver) StdoutLine: {'line': b'running install_data\n'}
+[18.764222] (-) TimerEvent: {}
+[18.865718] (-) TimerEvent: {}
+[18.957594] (lapin_driver) CommandEnded: {'returncode': 0}
+[18.968191] (-) TimerEvent: {}
+[19.058920] (lapin_driver) JobEnded: {'identifier': 'lapin_driver', 'rc': 0}
+[19.073192] (-) TimerEvent: {}
+[19.075472] (lapin_bringup) JobStarted: {'identifier': 'lapin_bringup'}
+[19.179098] (-) TimerEvent: {}
+[19.283645] (-) TimerEvent: {}
+[19.385634] (-) TimerEvent: {}
+[19.487466] (-) TimerEvent: {}
+[19.589493] (-) TimerEvent: {}
+[19.691082] (-) TimerEvent: {}
+[19.792916] (-) TimerEvent: {}
+[19.894271] (-) TimerEvent: {}
+[19.995616] (-) TimerEvent: {}
+[20.097050] (-) TimerEvent: {}
+[20.198973] (-) TimerEvent: {}
+[20.300676] (-) TimerEvent: {}
+[20.402064] (-) TimerEvent: {}
+[20.503391] (-) TimerEvent: {}
+[20.604881] (-) TimerEvent: {}
+[20.706253] (-) TimerEvent: {}
+[20.807758] (-) TimerEvent: {}
+[20.910187] (-) TimerEvent: {}
+[21.012098] (-) TimerEvent: {}
+[21.117548] (-) TimerEvent: {}
+[21.221795] (lapin_bringup) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/ubuntu/lapin_ws/src/install/lapin_bringup', '--editable', '--build-directory', '/home/ubuntu/lapin_ws/src/build/lapin_bringup/build', '--no-deps', 'install_data', '--install-dir', '/home/ubuntu/lapin_ws/src/install/lapin_bringup'], 'cwd': '/home/ubuntu/lapin_ws/src/build/lapin_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '10.0.0.102 53806 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:/home/ubuntu/lapin_ws/install/lapin_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/lapin_ws', 'TERM_PROGRAM_VERSION': '1.47.3', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-baf00230-823d-489f-88aa-7f23927e9677.sock', 'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL': 'true', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'PIPE_LOGGING': 'true', 'COLCON_PREFIX_PATH': '/home/ubuntu/lapin_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PYTHONBREAKPOINT': 'ipdb.set_trace', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/91899dcef7b8110878ea59626991a18c8a6a1b3e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8296365e36.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/lapin_ws/src/install/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_msgs:/opt/ros/foxy', 'SHELL': '/bin/bash', 'VERBOSE_LOGGING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/lapin_ws/src/build/lapin_bringup', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.102 53806 10.0.0.103 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/build/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/build/lapin_driver:/home/ubuntu/lapin_ws/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/install/lapin_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'AMD_ENTRYPOINT': 'vs/server/remoteExtensionHostProcess', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/lapin_ws/src/install/lapin_msgs:/home/ubuntu/lapin_ws/install/lapin_msgs'}, 'shell': False}
+[21.243479] (-) TimerEvent: {}
+[21.352148] (-) TimerEvent: {}
+[21.453581] (-) TimerEvent: {}
+[21.554815] (-) TimerEvent: {}
+[21.656206] (-) TimerEvent: {}
+[21.757568] (-) TimerEvent: {}
+[21.858834] (-) TimerEvent: {}
+[21.960110] (-) TimerEvent: {}
+[22.061442] (-) TimerEvent: {}
+[22.162718] (-) TimerEvent: {}
+[22.264101] (-) TimerEvent: {}
+[22.365459] (-) TimerEvent: {}
+[22.466819] (-) TimerEvent: {}
+[22.568215] (-) TimerEvent: {}
+[22.669575] (-) TimerEvent: {}
+[22.771059] (-) TimerEvent: {}
+[22.872535] (-) TimerEvent: {}
+[22.973930] (-) TimerEvent: {}
+[23.075563] (-) TimerEvent: {}
+[23.177233] (-) TimerEvent: {}
+[23.241659] (lapin_bringup) StdoutLine: {'line': b'running develop\n'}
+[23.277479] (-) TimerEvent: {}
+[23.378831] (-) TimerEvent: {}
+[23.480097] (-) TimerEvent: {}
+[23.581533] (-) TimerEvent: {}
+[23.682933] (-) TimerEvent: {}
+[23.784521] (-) TimerEvent: {}
+[23.885842] (-) TimerEvent: {}
+[23.987200] (-) TimerEvent: {}
+[24.088671] (-) TimerEvent: {}
+[24.190042] (-) TimerEvent: {}
+[24.291476] (-) TimerEvent: {}
+[24.389703] (lapin_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[24.391638] (-) TimerEvent: {}
+[24.392858] (lapin_bringup) StdoutLine: {'line': b'writing lapin_bringup.egg-info/PKG-INFO\n'}
+[24.394512] (lapin_bringup) StdoutLine: {'line': b'writing dependency_links to lapin_bringup.egg-info/dependency_links.txt\n'}
+[24.396322] (lapin_bringup) StdoutLine: {'line': b'writing entry points to lapin_bringup.egg-info/entry_points.txt\n'}
+[24.398017] (lapin_bringup) StdoutLine: {'line': b'writing requirements to lapin_bringup.egg-info/requires.txt\n'}
+[24.400083] (lapin_bringup) StdoutLine: {'line': b'writing top-level names to lapin_bringup.egg-info/top_level.txt\n'}
+[24.491938] (-) TimerEvent: {}
+[24.593342] (-) TimerEvent: {}
+[24.678989] (lapin_bringup) StdoutLine: {'line': b"reading manifest file 'lapin_bringup.egg-info/SOURCES.txt'\n"}
+[24.687927] (lapin_bringup) StdoutLine: {'line': b"writing manifest file 'lapin_bringup.egg-info/SOURCES.txt'\n"}
+[24.693611] (-) TimerEvent: {}
+[24.702661] (lapin_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[24.705942] (lapin_bringup) StdoutLine: {'line': b'Creating /home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages/lapin-bringup.egg-link (link to .)\n'}
+[24.715190] (lapin_bringup) StdoutLine: {'line': b'\n'}
+[24.717322] (lapin_bringup) StdoutLine: {'line': b'Installed /home/ubuntu/lapin_ws/src/build/lapin_bringup\n'}
+[24.718905] (lapin_bringup) StdoutLine: {'line': b'running install_data\n'}
+[24.793948] (-) TimerEvent: {}
+[24.895706] (-) TimerEvent: {}
+[24.930830] (lapin_bringup) CommandEnded: {'returncode': 0}
+[25.001101] (-) TimerEvent: {}
+[25.035218] (lapin_bringup) JobEnded: {'identifier': 'lapin_bringup', 'rc': 0}
+[25.042418] (-) EventReactorShutdown: {}

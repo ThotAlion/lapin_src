@@ -1,0 +1,224 @@
+[1.370s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.371s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff87c0aac0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff87c0aac0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff87c16070>)
+[1.535s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.540s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/lapin_ws/src'
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.658s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.660s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.661s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extension 'ignore'
+[1.662s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extension 'ignore_ament_install'
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extensions ['colcon_pkg']
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extension 'colcon_pkg'
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extensions ['colcon_meta']
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extension 'colcon_meta'
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extensions ['ros']
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_bringup) by extension 'ros'
+[1.685s] DEBUG:colcon.colcon_core.package_identification:Package 'lapin_bringup' with type 'ros.ament_python' and name 'lapin_bringup'
+[1.687s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.688s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extension 'ignore'
+[1.689s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extension 'ignore_ament_install'
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extensions ['colcon_pkg']
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extension 'colcon_pkg'
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extensions ['colcon_meta']
+[1.692s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extension 'colcon_meta'
+[1.693s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extensions ['ros']
+[1.693s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_driver) by extension 'ros'
+[1.702s] DEBUG:colcon.colcon_core.package_identification:Package 'lapin_driver' with type 'ros.ament_python' and name 'lapin_driver'
+[1.703s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extension 'ignore'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extension 'ignore_ament_install'
+[1.707s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extensions ['colcon_pkg']
+[1.707s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extension 'colcon_pkg'
+[1.708s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extensions ['colcon_meta']
+[1.709s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extension 'colcon_meta'
+[1.710s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extensions ['ros']
+[1.710s] Level 1:colcon.colcon_core.package_identification:_identify(lapin_msgs) by extension 'ros'
+[1.716s] DEBUG:colcon.colcon_core.package_identification:Package 'lapin_msgs' with type 'ros.ament_cmake' and name 'lapin_msgs'
+[1.718s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.719s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.723s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.723s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.724s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.770s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'cmake_args' from command line to 'None'
+[1.770s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'cmake_target' from command line to 'None'
+[1.771s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.771s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.772s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.772s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.773s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.773s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'lapin_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.775s] DEBUG:colcon.colcon_core.verb:Building package 'lapin_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/lapin_ws/src/build/lapin_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/lapin_ws/src/install/lapin_msgs', 'merge_install': False, 'path': '/home/ubuntu/lapin_ws/src/lapin_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.798s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'cmake_args' from command line to 'None'
+[1.798s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'cmake_target' from command line to 'None'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.800s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.800s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.801s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.801s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.802s] Level 5:colcon.colcon_core.verb:set package 'lapin_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.802s] DEBUG:colcon.colcon_core.verb:Building package 'lapin_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/lapin_ws/src/build/lapin_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/lapin_ws/src/install/lapin_driver', 'merge_install': False, 'path': '/home/ubuntu/lapin_ws/src/lapin_driver', 'symlink_install': True, 'test_result_base': None}
+[1.827s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'cmake_args' from command line to 'None'
+[1.827s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'cmake_target' from command line to 'None'
+[1.828s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.829s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.830s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.831s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.831s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.832s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.832s] Level 5:colcon.colcon_core.verb:set package 'lapin_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.833s] DEBUG:colcon.colcon_core.verb:Building package 'lapin_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/lapin_ws/src/build/lapin_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/lapin_ws/src/install/lapin_bringup', 'merge_install': False, 'path': '/home/ubuntu/lapin_ws/src/lapin_bringup', 'symlink_install': True, 'test_result_base': None}
+[1.836s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.852s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.855s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/lapin_ws/src/lapin_msgs' with build type 'ament_cmake'
+[1.890s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.892s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/lapin_ws/src/lapin_msgs'
+[1.897s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.897s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.920s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/lapin_ws/src/build/lapin_msgs -- -j4 -l4
+[3.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/lapin_ws/src/build/lapin_msgs -- -j4 -l4
+[4.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/lapin_ws/src/build/lapin_msgs
+[5.242s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lapin_msgs)
+[5.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/lapin_ws/install/lapin_driver:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/lapin_ws/src/build/lapin_msgs
+[5.280s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_msgs' for CMake module files
+[5.288s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_msgs' for CMake config files
+[5.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_msgs', 'cmake_prefix_path')
+[5.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/cmake_prefix_path.ps1'
+[5.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/cmake_prefix_path.dsv'
+[5.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/cmake_prefix_path.sh'
+[5.324s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib'
+[5.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_msgs', 'ld_library_path_lib')
+[5.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/ld_library_path_lib.ps1'
+[5.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/ld_library_path_lib.dsv'
+[5.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/ld_library_path_lib.sh'
+[5.345s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_msgs/bin'
+[5.346s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/pkgconfig/lapin_msgs.pc'
+[5.347s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages'
+[5.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_msgs', 'pythonpath')
+[5.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/pythonpath.ps1'
+[5.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/pythonpath.dsv'
+[5.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/hook/pythonpath.sh'
+[5.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.ps1'
+[5.381s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.dsv'
+[5.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.sh'
+[5.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.bash'
+[5.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/lapin_msgs/package.zsh'
+[5.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/lapin_ws/src/install/lapin_msgs/share/colcon-core/packages/lapin_msgs)
+[5.418s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/lapin_ws/src/lapin_driver' with build type 'ament_python'
+[5.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_driver', 'ament_prefix_path')
+[5.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/hook/ament_prefix_path.ps1'
+[5.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/hook/ament_prefix_path.dsv'
+[5.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/hook/ament_prefix_path.sh'
+[5.448s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.449s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.468s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.432s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/lapin_ws/src/lapin_driver'
+[7.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.439s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.457s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_driver': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_driver/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_driver
+[11.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_driver', 'pythonpath_develop')
+[11.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/build/lapin_driver/share/lapin_driver/hook/pythonpath_develop.ps1'
+[11.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_driver --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_driver/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_driver
+[11.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/build/lapin_driver/share/lapin_driver/hook/pythonpath_develop.dsv'
+[11.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/build/lapin_driver/share/lapin_driver/hook/pythonpath_develop.sh'
+[11.227s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_driver' for CMake module files
+[11.232s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_driver' for CMake config files
+[11.238s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_driver/lib'
+[11.239s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_driver/bin'
+[11.240s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/pkgconfig/lapin_driver.pc'
+[11.241s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages'
+[11.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_driver', 'pythonpath')
+[11.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/hook/pythonpath.ps1'
+[11.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/hook/pythonpath.dsv'
+[11.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/hook/pythonpath.sh'
+[11.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lapin_driver)
+[11.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/package.ps1'
+[11.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/package.dsv'
+[11.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/package.sh'
+[11.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/package.bash'
+[11.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_driver/share/lapin_driver/package.zsh'
+[11.294s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/lapin_ws/src/install/lapin_driver/share/colcon-core/packages/lapin_driver)
+[11.299s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/lapin_ws/src/lapin_bringup' with build type 'ament_python'
+[11.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_bringup', 'ament_prefix_path')
+[11.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/hook/ament_prefix_path.ps1'
+[11.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/hook/ament_prefix_path.dsv'
+[11.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/hook/ament_prefix_path.sh'
+[11.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.348s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[13.375s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/lapin_ws/src/lapin_bringup'
+[13.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.383s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.400s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[13.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/lapin_ws/src/build/lapin_bringup': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/build/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_bringup/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_bringup
+[17.196s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_bringup', 'pythonpath_develop')
+[17.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/build/lapin_bringup/share/lapin_bringup/hook/pythonpath_develop.ps1'
+[17.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/lapin_ws/src/build/lapin_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/build/lapin_driver:/home/ubuntu/lapin_ws/src/install/lapin_driver/lib/python3.8/site-packages:/home/ubuntu/lapin_ws/src/install/lapin_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/lapin_ws/src/install/lapin_bringup --editable --build-directory /home/ubuntu/lapin_ws/src/build/lapin_bringup/build --no-deps install_data --install-dir /home/ubuntu/lapin_ws/src/install/lapin_bringup
+[17.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/build/lapin_bringup/share/lapin_bringup/hook/pythonpath_develop.dsv'
+[17.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/build/lapin_bringup/share/lapin_bringup/hook/pythonpath_develop.sh'
+[17.227s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_bringup' for CMake module files
+[17.232s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_bringup' for CMake config files
+[17.238s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib'
+[17.239s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_bringup/bin'
+[17.240s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/pkgconfig/lapin_bringup.pc'
+[17.241s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/lapin_ws/src/install/lapin_bringup/lib/python3.8/site-packages'
+[17.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('lapin_bringup', 'pythonpath')
+[17.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/hook/pythonpath.ps1'
+[17.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/hook/pythonpath.dsv'
+[17.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/hook/pythonpath.sh'
+[17.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lapin_bringup)
+[17.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/package.ps1'
+[17.273s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/package.dsv'
+[17.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/package.sh'
+[17.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/package.bash'
+[17.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/lapin_bringup/package.zsh'
+[17.295s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/lapin_ws/src/install/lapin_bringup/share/colcon-core/packages/lapin_bringup)
+[17.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.302s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.303s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[17.304s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[17.354s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.355s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.356s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.362s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[17.363s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.368s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/lapin_ws/src/install/local_setup.ps1'
+[17.377s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/lapin_ws/src/install/_local_setup_util_ps1.py'
+[17.390s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/lapin_ws/src/install/setup.ps1'
+[17.418s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/lapin_ws/src/install/local_setup.sh'
+[17.424s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/lapin_ws/src/install/_local_setup_util_sh.py'
+[17.429s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/lapin_ws/src/install/setup.sh'
+[17.451s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/lapin_ws/src/install/local_setup.bash'
+[17.456s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/lapin_ws/src/install/setup.bash'
+[17.478s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/lapin_ws/src/install/local_setup.zsh'
+[17.483s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/lapin_ws/src/install/setup.zsh'
