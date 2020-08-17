@@ -11,9 +11,9 @@ class DriverSensor(Node):
 
     def __init__(self):
         super().__init__('lapin_sensor')
-        self.feetPublisher = self.create_publisher(Feet, 'feet', 10)
-        self.posePublisher = self.create_publisher(Vector3Stamped, 'pose', 10)
-        self.twistPublisher = self.create_publisher(Vector3Stamped, 'twist', 10)
+        self.feetPublisher = self.create_publisher(Feet, 'feet', 1)
+        self.posePublisher = self.create_publisher(Vector3Stamped, 'pose', 1)
+        self.twistPublisher = self.create_publisher(Vector3Stamped, 'twist', 1)
         timer_period = 0.04  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.PS = Serial('/dev/ttyS0',115200,timeout=0.1)
