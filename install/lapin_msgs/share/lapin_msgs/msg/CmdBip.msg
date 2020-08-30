@@ -1,1 +1,0 @@
-/home/ubuntu/lapin_ws/src/lapin_msgs/msg/CmdBip.msg

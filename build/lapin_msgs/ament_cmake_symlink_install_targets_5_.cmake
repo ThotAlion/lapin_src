@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/lapin_ws/src/build/lapin_msgs/rosidl_generator_py/lapin_msgs/liblapin_msgs__python.so" "TARGETS" "lapin_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -1,1 +1,0 @@
-/home/ubuntu/lapin_ws/src/build/lapin_msgs/rosidl_typesupport_introspection_c/lapin_msgs/msg/detail/cmd_bip__rosidl_typesupport_introspection_c.h

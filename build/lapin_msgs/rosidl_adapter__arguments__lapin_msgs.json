@@ -1,7 +1,0 @@
-{
-  "package_name": "lapin_msgs",
-  "non_idl_tuples": [
-    "/home/ubuntu/lapin_ws/src/lapin_msgs:msg/Feet.msg",
-    "/home/ubuntu/lapin_ws/src/lapin_msgs:msg/CmdBip.msg"
-  ]
-}
